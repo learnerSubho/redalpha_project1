@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C Programming</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <header>
+    <h1>C Programming</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="DSA.html">DSA</a></li>
+      <li><a href="JAVA.html">JAVA</a></li>
+      <li><a href="python.html">PYTHON</a></li>
+      <li><a href="COMPUTER.html">COMPUTER NETWORKS</a></li>
+      <li><a href="DAA.html">DAA</a></li>
+      <li><a href="OPERATINGSYSTEM.HTML">OPERATING SYSTEM</a></li>
+      <li><a href="DBMS.html">DBMS</a></li>
+      <li><a href="C.HTML">C PROGRAMMING</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Introduction to C Programming</h2>
+    <p>C is a powerful general-purpose programming language. It is fast, portable, and available on all platforms. If you are new to programming, C is a good choice to start your programming journey.</p>
+  </section>
+
+  <section>
+    <h2>Topics Covered</h2>
+    <ul>
+      <li><a href="#syntax">Basic Syntax</a></li>
+      <li><a href="#data-types">Data Types</a></li>
+      <li><a href="#control-structures">Control Structures</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#arrays">Arrays</a></li>
+      <li><a href="#pointers">Pointers</a></li>
+      <li><a href="#structures">Structures</a></li>
+      <li><a href="#file-io">File I/O</a></li>
+    </ul>
+  </section>
+
+  <section id="syntax">
+    <h3>Basic Syntax</h3>
+    <p>The basic syntax of C programs consists of functions and variables. A simple C program looks like this:</p>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+    </code></pre>
+  </section>
+
+  <section id="data-types">
+    <h3>Data Types</h3>
+    <p>C supports various data types including int, float, char, and more. Here are some examples:</p>
+    <pre><code>
+int integer = 10;
+float floating_point = 3.14;
+char character = 'A';
+    </code></pre>
+  </section>
+
+  <section id="control-structures">
+    <h3>Control Structures</h3>
+    <p>C supports various control structures like if-else, for loop, while loop, etc. Here are some examples:</p>
+    <pre><code>
+// If-Else
+if (integer > 5) {
+    printf("Integer is greater than 5");
+} else {
+    printf("Integer is less than or equal to 5");
+}
+
+// For Loop
+for (int i = 0; i < 10; i++) {
+    printf("%d ", i);
+}
+    </code></pre>
+  </section>
+
+  <section id="functions">
+    <h3>Functions</h3>
+    <p>Functions in C allow you to divide your code into modular blocks. Here is an example:</p>
+    <pre><code>
+void printMessage() {
+    printf("Hello from a function!");
+}
+
+int main() {
+    printMessage();
+    return 0;
+}
+    </code></pre>
+  </section>
+
+  <section id="arrays">
+    <h3>Arrays</h3>
+    <p>Arrays in C are used to store multiple values of the same type. Here is an example:</p>
+    <pre><code>
+int numbers[5] = {1, 2, 3, 4, 5};
+
+for (int i = 0; i < 5; i++) {
+    printf("%d ", numbers[i]);
+}
+    </code></pre>
+  </section>
+
+  <section id="pointers">
+    <h3>Pointers</h3>
+    <p>Pointers are a powerful feature in C that allows you to work with memory directly. Here is an example:</p>
+    <pre><code>
+int value = 10;
+int *pointer = &value;
+
+printf("Value: %d, Pointer: %p", value, pointer);
+    </code></pre>
+  </section>
+
+  <section id="structures">
+    <h3>Structures</h3>
+    <p>Structures in C allow you to group different data types together. Here is an example:</p>
+    <pre><code>
+struct Person {
+    char name[50];
+    int age;
+};
+
+struct Person person1;
+
+person1.age = 30;
+strcpy(person1.name, "John Doe");
+
+printf("Name: %s, Age: %d", person1.name, person1.age);
+    </code></pre>
+  </section>
+
+  <section id="file-io">
+    <h3>File I/O</h3>
+    <p>C provides functions to work with files. Here is an example of reading a file:</p>
+    <pre><code>
+FILE *file;
+file = fopen("example.txt", "r");
+
+if (file) {
+    char line[100];
+    while (fgets(line, sizeof(line), file)) {
+        printf("%s", line);
+    }
+    fclose(file);
+}
+    </code></pre>
+  </section>
+
+  <footer>
+    <div class="contain">
+        <p class="animated-text">&copy; 2024 <a href="https://soumya-xd.github.io/Redalpha/"
+                target="_blank">RedAlpha</a> Team. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

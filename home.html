@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science YouTube Channels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="Red_alpha_N.gif" alt="Logo" class="logo" onclick="toggleNavbar()">
+  </div>
+  <ul class="navbar-menu" id="navbar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Materials.html">Notes</a></li>
+    <li><a href="About.html">AboutUs</a></li>
+    <li><a href="https://soumya-xd.github.io/Redalpha/" target="_blank">Developers</a></li>
+  </ul>
+</nav>
+    <div class="container">
+        <h1>Best Computer Science YouTube Channels</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Channel Name</th>
+                    <th>Subscribers</th>
+                    <th>Playlist Link</th>
+                    <th>Subscribe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Row for DSA -->
+                <tr>
+                    <td>BEST CHANNEL FOR  DSA</td>
+                    <td>2.09M</td>
+                    <td><a href="https://www.youtube.com/playlist?list=PLqleLpAMfxGAf5rrWdm92WMK3-gsrxgz5" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@LearnCodingOfficial')">Subscribe</button></td>
+                </tr>
+                <!-- Add similar rows for other subjects -->
+                <tr>
+                    <td>BEST CHANNEL FOR  DAA</td>
+                    <td>1.97M</td>
+                    <td><a href="https://www.youtube.com/watch?v=u8JZ9gU5o4g&list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@GateSmashers')">Subscribe</button></td>
+                </tr>
+                <tr>
+                    <td>BEST CHANNEL FOR  OS</td>
+                    <td>207K</td>
+                    <td><a href="https://www.youtube.com/playlist?list=PL23dd-8zssJDbCZI4Rle3vuQokIAdiDdB" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@StartPracticing')">Subscribe</button></td>
+                </tr>
+                <!-- Add similar rows for other subjects -->
+                <tr>
+                    <td>BEST CHANNEL FOR  COMPUTER NETWORK</td>
+                    <td>1.97M</td>
+                    <td><a href="https://www.youtube.com/watch?v=JFF2vJaN0Cw&list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@GateSmashers')">Subscribe</button></td>
+                </tr>
+                <tr>
+                    <td>BEST CHANNEL FOR  PYTHON</td>
+                    <td>6.43M</td>
+                    <td><a href="https://www.youtube.com/watch?v=7wnove7K-ZQ&list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@CodeWithHarry')">Subscribe</button></td>
+                </tr>
+                <!-- Add similar rows for other subjects -->
+                <tr>
+                    <td>BEST CHANNEL FOR  JAVA</td>
+                    <td>5.66M</td>
+                    <td><a href="https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@ApnaCollegeOfficial')">Subscribe</button></td>
+                </tr>
+                <tr>
+                    <td>BEST CHANNEL FOR  C PROGRAMMING</td>
+                    <td>1.66M</td>
+                    <td><a href="https://www.youtube.com/watch?v=EjavYOFoJJ0&list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@JennyslecturesCSIT')">Subscribe</button></td>
+                </tr>
+                <tr>
+                    <td>BEST CHANNEL FOR  PHP</td>
+                    <td>1.76M</td>
+                    <td><a href="https://www.youtube.com/watch?v=yMclPkD4sQg&list=PLS1QulWo1RIZc4GM_E04HCPEd_xpcaQgg" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@ProgrammingKnowledge')">Subscribe</button></td>
+                </tr>
+                <tr>
+                    <td>BEST CHANNEL FOR  FOR HTML</td>
+                    <td>6.43M</td>
+                    <td><a href="https://www.youtube.com/watch?v=BsDoLVMnmZs" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@CodeWithHarry')">Subscribe</button></td>
+                </tr>
+                <!-- Add similar rows for other subjects -->
+                <tr>
+                    <td>BEST CHANNEL FOR  JAVASCRIPT</td>
+                    <td>6.43M</td>
+                    <td><a href="https://www.youtube.com/watch?v=ER9SspLe4Hg&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@CodeWithHarry')">Subscribe</button></td>
+                </tr>
+                <tr>
+                    <td>BEST CHANNEL FOR  CSS</td>
+                    <td>90.1K</td>
+                    <td><a href="https://www.youtube.com/watch?v=PVBqZRAOZL8&list=PLhzIaPMgkbxBk9-drEC0MBPqEOXpVlwY4" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@codingshuttle')">Subscribe</button></td>
+                </tr>
+                <tr>
+                    <td>BEST CHANNEL FOR  AIML</td>
+                    <td>1M</td>
+                    <td><a href="https://www.youtube.com/watch?v=bPrmA1SEN2k&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe" target="_blank">View Playlist</a></td>
+                    <td><button onclick="subscribe('https://www.youtube.com/@krishnaik06')">Subscribe</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="foot">
+        <div class="row">
+            <div class="col1">
+                <p>RedAlpha Edu is committed to providing CSE students with premier resources for final year placement preparation. We're excited to support your journey toward a confident and successful tech career!</p>
+            </div>
+            <div class="col">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-fw fa-home" style="padding-right: 7px;"></i>Home</a></li>
+                    <li><a href="Materials.html"><i class="fa-solid fa-book-open" style="padding-right: 7px;"></i>Materials</a></li>
+                    <li><a href="About.html"><i class="fa-solid fa-address-card" style="padding-right: 7px;"></i>About us</a></li>
+                    <li><a href="https://soumya-xd.github.io/Redalpha/" target="_blank"><i class="fa-solid fa-user-secret" style="padding-right: 7px;"></i>Developers</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Feedback</h3>
+                <form name = 'submit-to-google-sheet'>
+                    <div class="id">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="ID">
+                        <textarea cols="16" rows="2" id="message" name="message" placeholder="Give Feedback..."></textarea>
+                        <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="contain">
+            <p class="animated-text">&copy; 2024 <a href="https://soumya-xd.github.io/Redalpha/" target="_blank">RedAlpha</a> Team. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/soumya.singharoy.98" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/Soumya413876651" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/soumya_xd7/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/soumya-singha-roy-a20880261/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function subscribe(channelUrl) {
+            window.open(channelUrl, '_blank');
+        }
+    
+        function subscribe(channelUrl) {
+    window.open(channelUrl, '_blank');
+}
+
+function toggleNavbar() {
+    var navbarMenu = document.getElementById("navbar-menu");
+    // Toggle between 'flex' and 'none' for showing and hiding the navbar menu
+    if (navbarMenu.style.display === "flex") {
+        navbarMenu.style.display = "none"; // Hide menu
+    } else {
+        navbarMenu.style.display = "flex"; // Show menu
+    }
+}
+
+window.addEventListener("resize", function() {
+    var navbarMenu = document.getElementById("navbar-menu");
+    // Display menu as 'flex' for screen widths greater than 768px, otherwise 'none'
+    if (window.innerWidth > 768) {
+        navbarMenu.style.display = "flex"; // Show menu on larger screens
+    } else {
+        navbarMenu.style.display = "none"; // Hide menu on smaller screens
+    }
+});
+
+
+    </script>
+    <script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbxIqbMiZUWG9UUftygWB4uieaWMN8LdtBktammyyfyF1aubA_I8H_C4nEaryvxLqRb7cA/exec>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  });
+</script>
+</body>
+</html>

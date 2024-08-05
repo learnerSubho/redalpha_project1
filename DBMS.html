@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Management Systems (DBMS)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="dbms.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <header>
+    <h1>Database Management Systems (DBMS)</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="DSA.html">DSA</a></li>
+      <li><a href="JAVA.html">JAVA</a></li>
+      <li><a href="python.html">PYTHON</a></li>
+      <li><a href="COMPUTER.html">COMPUTER NETWORKS</a></li>
+      <li><a href="DAA.html">DAA</a></li>
+      <li><a href="OPERATINGSYSTEM.html">OPERATING SYSTEM</a></li>
+      <li><a href="DBMS.html">DBMS</a></li>
+      <li><a href="C.HTML">C PROGRAMMING</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Introduction to DBMS</h2>
+    <p>A Database Management System (DBMS) is a software that uses a standard method of cataloging, retrieving, and running queries on data. It manages incoming data, organizes it, and provides ways for the data to be modified or extracted by users or other programs.</p>
+  </section>
+
+  <section>
+    <h2>Topics Covered</h2>
+    <ul>
+      <li><a href="dbms-architecture.html">DBMS Architecture</a></li>
+      <li><a href="#data-models">Data Models</a></li>
+      <li><a href="#sql">SQL</a></li>
+      <li><a href="#normalization">Normalization</a></li>
+      <li><a href="#transactions">Transactions</a></li>
+      <li><a href="#concurrency-control">Concurrency Control</a></li>
+      <li><a href="#backup-and-recovery">Backup and Recovery</a></li>
+      <li><a href="#database-security">Database Security</a></li>
+    </ul>
+  </section>
+
+  <section id="dbms-architecture">
+    <h3>DBMS Architecture</h3>
+    <p>DBMS architecture is divided into three levels: Internal Level, Conceptual Level, and External Level. Here are some key concepts:</p>
+    <ul>
+      <li>Three-Tier Architecture</li>
+      <li>Two-Tier Architecture</li>
+    </ul>
+  </section>
+
+  <section id="data-models">
+    <h3>Data Models</h3>
+    <p>Data models define how data is connected and stored within the system. Here are some common data models:</p>
+    <ul>
+      <li>Hierarchical Model</li>
+      <li>Network Model</li>
+      <li>Relational Model</li>
+      <li>Object-Oriented Model</li>
+    </ul>
+  </section>
+
+  <section id="sql">
+    <h3>SQL</h3>
+    <p>SQL (Structured Query Language) is used to communicate with a database. Here are some key concepts:</p>
+    <ul>
+      <li>Data Definition Language (DDL)</li>
+      <li>Data Manipulation Language (DML)</li>
+      <li>Data Control Language (DCL)</li>
+      <li>Transaction Control Language (TCL)</li>
+    </ul>
+  </section>
+
+  <section id="normalization">
+    <h3>Normalization</h3>
+    <p>Normalization is the process of organizing data to reduce redundancy and improve data integrity. Here are some key concepts:</p>
+    <ul>
+      <li>First Normal Form (1NF)</li>
+      <li>Second Normal Form (2NF)</li>
+      <li>Third Normal Form (3NF)</li>
+      <li>Boyce-Codd Normal Form (BCNF)</li>
+    </ul>
+  </section>
+
+  <section id="transactions">
+    <h3>Transactions</h3>
+    <p>A transaction is a unit of work that is performed against a database. Here are some key concepts:</p>
+    <ul>
+      <li>ACID Properties</li>
+      <li>Commit and Rollback</li>
+    </ul>
+  </section>
+
+  <section id="concurrency-control">
+    <h3>Concurrency Control</h3>
+    <p>Concurrency control manages the simultaneous execution of transactions in a multi-user database environment. Here are some key concepts:</p>
+    <ul>
+      <li>Locking Mechanisms</li>
+      <li>Timestamp Ordering</li>
+      <li>Multiversion Concurrency Control (MVCC)</li>
+    </ul>
+  </section>
+
+  <section id="backup-and-recovery">
+    <h3>Backup and Recovery</h3>
+    <p>Backup and recovery are techniques that ensure data is protected and can be restored in case of data loss. Here are some key concepts:</p>
+    <ul>
+      <li>Backup Types</li>
+      <li>Recovery Techniques</li>
+    </ul>
+  </section>
+
+  <section id="database-security">
+    <h3>Database Security</h3>
+    <p>Database security refers to the collective measures used to protect and secure a database. Here are some key concepts:</p>
+    <ul>
+      <li>Authentication</li>
+      <li>Authorization</li>
+      <li>Encryption</li>
+      <li>Auditing</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="contain">
+        <p class="animated-text">&copy; 2024 <a href="https://soumya-xd.github.io/Redalpha/"
+                target="_blank">RedAlpha</a> Team. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

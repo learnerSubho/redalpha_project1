@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            color: black;
+        }
+        
+        .mid {
+            text-align: center;
+            padding: 50px;
+            background-color:transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .mid img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .mid .animated-text{
+            color: black;
+        }
+        .mid button {
+            font-size: 1em;
+            padding: 10px 20px;
+            color: black;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+
+        }
+        .mid button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .animated-text {
+            display: inline-block;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .animated-text:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .animated-text:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        
+    </style>
+    <div id="main">
+        <nav>
+            <div id="navbarcontainer">
+                <img class="logo" src="Red_alpha_N.gif" alt="Logo">
+                <div class="name">
+                    <h1>Alpha Edu</h1>
+                </div>
+                <div class="box">
+                    <input id="searchInput" type="text" placeholder="Search...">
+                    <a id="searchButton" href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="index.html" class="active"><i class="fa fa-fw fa-home"
+                                style="padding-right: 7px;"></i>Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book-open"
+                                style="padding-right: 7px;"></i>Materials</a>
+                        <ul id="materialmenu">
+                            <li><a href="Materials.html"><i class="fa-regular fa-file-code"
+                                        style="padding-right: 7px;"></i>Notes</a></li>
+                            <li><a href="home.html" target="_blank"><i
+                                        class="fa-solid fa-user-secret" style="padding-right: 7px;"></i>Playlist</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-address-card" style="padding-right: 7px;"></i>About
+                            Us</a>
+                        <ul id="aboutmenu">
+                            <li><a href="About.html"><i class="fa-regular fa-file-code"
+                                        style="padding-right: 7px;"></i>Website</a></li>
+                            <li><a href="https://soumya-xd.github.io/Redalpha/" target="_blank"><i
+                                        class="fa-solid fa-user-secret" style="padding-right: 7px;"></i>Developer</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact.html"><i class="fa-regular fa-envelope" style="padding-right: 7px;"></i>Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="announcement">
+        <marquee behavior="scroll" direction="left"><a href="#">This application is currently in testing mode. Some features may not work as expected, and updates or changes might occur frequently. Thank you for your understanding and patience during this phase.Developed by SOUMYA  SUBHAJIT  BIPLAB.</a></marquee>
+    </div>
+    <div>
+        <style>
+            /* Container with an alternating color slice effect */
+          .container1 {
+    color: rgb(238, 234, 238);
+    display: flex;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container1::before {
+    opacity: 110%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom right,
+        #ff3333 50%,
+        #000000 50%
+    );
+    z-index: -1;
+    transform: skewX(-10deg);
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 50px;
+    position: relative;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.tech-icons {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.tech-icons img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%; /* This makes the images circular */
+    object-fit: cover;
+ /* Ensures the image covers the circle without distortion */
+}
+
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.website-preview {
+
+    width: 80%;
+    transform: perspective(1000px) rotateY(-15deg);
+    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.website-preview img {
+    opacity: 80%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container1 {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .container1::before {
+        width: 100%;
+        transform: skewX(0);
+    }
+        h1{
+            font-size: 30px;
+            padding-left:15px ;
+            font-family: monospace;
+            
+        }
+    .left-section {
+        padding-right: 0;
+        margin-bottom: 50px;
+        color: white;
+        width:80vw;
+    }
+    
+
+    .right-section {
+        padding-left: 0;
+    }
+
+    .website-preview {
+        width: 100%;
+        transform: none;
+    }
+}
+
+
+@keyframes snap {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.snap {
+    display: inline-block;
+    animation: snap 2s ease-in-out;
+}
+@keyframes reverseSnap {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.reverse-snap {
+    display: inline-block;
+    animation: reverseSnap 2s ease-in-out;
+}
+
+/* Apply the reverse snap animation to the element */
+.reverse-snap {
+    display: inline-block;
+
+    animation: reverseSnap 4s ease-in-out;
+}
+
+            
+        </style>
+        <div class="container1">
+            <div class="left-section">
+                <h1>About our Website</h1>
+              
+                <P class="reverse-snap">
+    <h2>Our website provides the essential tools and resources to help you efficiently crack technical interviews. With our targeted practice materials and expert tips, you'll be well-prepared to succeed.</h2>
+                    
+     
+                 </P>
+
+          
+                <div class="tech-icons">
+                    
+                    <img src="html.png" alt="HTML5">
+                    <img src="css.png" alt="CSS3">
+                    <img src="java.png" alt="Java">
+                    <img src="boot.jpeg" alt="Bootstrap">
+                    <img src="word.png" alt="WordPress">
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="website-preview">
+                    <img src="wwf.gif" alt="Website Preview">
+                </div>
+            </div>
+        </div>
+
+    <div class="foot">
+        <div class="row">
+            <div class="col1">
+                <p>RedAlpha Edu is committed to providing CSE students with premier resources for final year placement
+                    preparation. We're excited to support your journey toward a confident and successful tech career!
+                </p>
+            </div>
+            <div class="col">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-fw fa-home" style="padding-right: 7px;"></i>Home</a></li>
+                    <li><a href="Materials.html"><i class="fa-solid fa-book-open"
+                                style="padding-right: 7px;"></i>Materials</a></li>
+                    <li><a href="About.html"><i class="fa-solid fa-address-card" style="padding-right: 7px;"></i>About
+                            us</a></li>
+                    <li><a href="https://soumya-xd.github.io/Redalpha/" target="_blank"><i
+                                class="fa-solid fa-user-secret" style="padding-right: 7px;"></i>Developers</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Feedback</h3>
+                <form name="submit-to-google-sheet">
+                    <div class="id">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="ID">
+                        <textarea cols="16" rows="2" id="message" name="message" placeholder="Give Feedback..."></textarea>
+                        <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                    <span id="success-message" class="hidden">Message sent successfully!</span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contain">
+            <p class="animated-text">&copy; 2024 <a href="https://soumya-xd.github.io/Redalpha/"
+                    target="_blank">RedAlpha</a> Team. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        $(document).ready(function(){
+            $('.invisivle-content').hide();
+            $(document).on('click','#btn',function(){
+                var morelessButton = $(this).parent(".boxs").find(".invisivle-content").is(':visible') ? 'Read More' : 'Read Less';
+                $(this).text(morelessButton);
+                $(this).parent(".boxs").find(".invisivle-content").toggle();
+                $(this).parent(".boxs").find(".visible-content").toggle();
+            });
+        });
+    </script>
+    <script>
+    
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxIqbMiZUWG9UUftygWB4uieaWMN8LdtBktammyyfyF1aubA_I8H_C4nEaryvxLqRb7cA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const successMessage = document.getElementById('success-message');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                console.log('Success!', response);
+                successMessage.classList.add('show');
+
+                // Optionally hide the success message after a few seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000); // Hide after 5 seconds
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+            });
+    });
+
+
+    
+ 
+    
+    document.getElementById('searchButton').addEventListener('click', function () {
+        var query = document.getElementById('searchInput').value.trim().toLowerCase();
+        var resultDiv = document.getElementById('result');
+
+        // Define arrays for each search term category
+        var dsaTerms = ['dsa', 'datastructure and algorithm', 'data structures and algorithms', 'data structures', 'algorithm'];
+        var pythonTerms = ['python', 'python programming', 'oop with python'];
+        var osTerms = ['os', 'operating system', 'operating systems'];
+        var dbmsTerms = ['dbms', 'data base management system', 'database management system'];
+        var daaTerms = ['daa', 'design and analysis of algorithm'];
+        var cTerms = ['c', 'c programming', 'c language', 'language c'];
+        var computerNetworksTerms = ['computer networks', 'cn', 'networking'];
+        var javaTerms = ['java','JAVA', 'java programming', 'JAVA language', 'java oop'];
+        // Redirect based on the search query
+        if (query === '') {
+            resultDiv.innerHTML = '<p>Please enter a search term.</p>';
+        } else if (dsaTerms.includes(query)) {
+            window.location.href = 'DSA.html';
+        } else if (pythonTerms.includes(query)) {
+            window.location.href = 'python.html';
+        } else if (osTerms.includes(query)) {
+            window.location.href = 'OPERATINGSYSTEM.html';
+        } else if (dbmsTerms.includes(query)) {
+            window.location.href = 'DBMS.html';
+        } else if (daaTerms.includes(query)) {
+            window.location.href = 'DAA.html';
+        } else if (cTerms.includes(query)) {
+            window.location.href = 'C.html';
+        } else if (computerNetworksTerms.includes(query)) {
+            window.location.href = 'COMPUTER.html';
+        } else if (javaTerms.includes(query)) {
+            window.location.href = 'JAVA.html';
+        } else {
+            resultDiv.innerHTML = '<p>No results found for: ' + query + '</p>';
+        }
+    });
+
+    document.getElementById('searchInput').addEventListener('click', function () {
+        // Additional functionality can be added here if needed
+    });
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
+</body>
+
+</html>
